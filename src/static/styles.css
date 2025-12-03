@@ -95,17 +95,12 @@ section h3 {
 }
 
 .activity-card .participants li {
-  padding: 5px 0 5px 20px;
+  padding: 5px 0;
   position: relative;
   color: #555;
-}
-
-.activity-card .participants li:before {
-  content: "•";
-  position: absolute;
-  left: 5px;
-  color: #1a237e;
-  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .activity-card .participants .no-participants {
@@ -178,6 +173,23 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 6px;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  background: none;
 }
 
 footer {
